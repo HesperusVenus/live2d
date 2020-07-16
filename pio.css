@@ -53,18 +53,39 @@
 
 .pio-container .pio-dialog{
     top: -2em;
-    opacity: 0;
+    /* opacity: 0; */
     z-index: -1;
-    font-size: .8em;
-    min-width: 12em;
-    background: #fff;
-    padding: .75em 1em;
-    border-radius: 1em;
+    /* font-size: .8em; */
+    /* min-width: 12em; */
+    /* background: #fff; */
+    /* padding: .75em 1em; */
+    /* border-radius: 1em; */
     visibility: hidden;
-    position: absolute;
+    /* position: absolute; */
     word-break: break-all;
-    border: 1px solid #eee;
-    transition: opacity .3s, visibility .3s;
+    /* border: 1px solid #eee; */
+    /* transition: opacity .3s, visibility .3s; */
+    opacity: 0;
+    width: 250px;
+    height: auto;
+    min-height: 70px;
+    margin: -20px 20px;
+    padding: 7px 10px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,.12), 0 2px 2px 0 rgba(0,0,0,.24);
+    transition: box-shadow .2s ease;
+    background: #fafafa;
+    color: #333;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: absolute;
+    animation-delay: 5s;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-name: shake;
+    animation-timing-function: ease-in-out;
 }
 .pio-container .pio-dialog.active{
     opacity: 1;
