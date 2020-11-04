@@ -153,7 +153,6 @@ var Paul_Pio = function (prop) {
 
             // 夜间模式
             if(prop.night){
-                console.log(prop)
                 elements.night.onclick = function () {
                     eval(prop.night);
                 };
